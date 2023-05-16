@@ -20,6 +20,7 @@ function novoUsuario(users) {
 }
 
 // Função para cadastrar um novo usuário
+
 function cadastrarUsuario(usuario) {
   const users = lerUsuario();
 
@@ -39,7 +40,7 @@ function cadastrarUsuario(usuario) {
 }
 
 // Função para fazer login
-function fazerLogin(email, senha) {
+function fazerLogin(email, senha ) {
   const users = lerUsuario();
 
   // Verifica se o email e senha correspondem a algum usuário
@@ -52,7 +53,7 @@ function fazerLogin(email, senha) {
 }
 
 // Função para excluir um usuário
-function excluirUsuario(email, senha) {
+function excluirUsuario(email, senha ) {
   const users = lerUsuario();
 
   // Verifica se o email e senha correspondem a algum usuário
@@ -76,16 +77,3 @@ module.exports = {
   excluirUsuario,
 };
 
-// const username = 'Dav1Samu3l';
-// const url = `https://api.github.com/users/${username}`;
-
-// fetch(url)
-//   .then(response => response.json())
-//   .then(data => {
-//     const name = data.name;
-//     const email = data.email;
-//     const avatarUrl = data.avatar_url;
-//     console.log(` Eu sou ${name}, meu email é: ${email} e minha foto é esta: ${avatarUrl} `);
-//   })
-//   .catch(error => console.error(error));
-  

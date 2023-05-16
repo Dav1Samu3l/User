@@ -1,16 +1,18 @@
 const gerenciadorUsuarios = require('./gerenciadorUsuarios');
 
-for (let i = 1; i <= 30; i++) {
-  const novoUsuario = {
-    email: `user${i}@example.com`,
-    senha: `senha${i}`,
-  };
 
+const novoUsuario = {
+    nome: "davi",
+    email: `user4@email.com`,
+    senha: `senha123}`, 
+  };
   const resultado = gerenciadorUsuarios.cadastrarUsuario(novoUsuario);
   console.log(resultado);
-  
-  
-//   const excluirUsuario = gerenciadorUsuarios.excluirUsuario(excluirUsuario);
-//  console.log(excluirUsuario);
 
-}
+
+
+// const email = "user@email.com";
+// const senha = "senha123";
+// const excluirUsuario = gerenciadorUsuarios.excluirUsuario(email, senha);
+// console.log(excluirUsuario);
+
