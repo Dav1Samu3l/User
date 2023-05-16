@@ -25,7 +25,7 @@ function cadastrarUsuario(usuario) {
   const users = lerUsuario();
 
   // Verifica se o email já está sendo utilizado
-  const emailExists = users.some((user) => user.email === usuario.email);
+  const emailExists = users.some((user) => user.email === usuario.email);// usado para verificar se pelomenos um satisfaz a condição
   if (emailExists) {
     return 'Erro: O email já está sendo utilizado.';
   }
@@ -44,7 +44,7 @@ function fazerLogin(email, senha ) {
   const users = lerUsuario();
 
   // Verifica se o email e senha correspondem a algum usuário
-  const user = users.find((user) => user.email === email && user.senha === senha);
+  const user = users.find((user) => user.email === email && user.senha === senha); // find encontra o primeiro elemento que satisfaser a condição
   if (user) {
     return 'Login realizado com sucesso.';
   } else {
@@ -57,7 +57,7 @@ function excluirUsuario(email, senha ) {
   const users = lerUsuario();
 
   // Verifica se o email e senha correspondem a algum usuário
-  const userIndex = users.findIndex((user) => user.email === email && user.senha === senha);
+  const userIndex = users.findIndex((user) => user.email === email && user.senha === senha); // usado para encontrar o indice de um array
   if (userIndex !== -1) {
     // Remove o usuário da lista
     users.splice(userIndex, 1);
